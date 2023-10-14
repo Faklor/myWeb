@@ -1,0 +1,37 @@
+.main{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    .content{
+        width: 800px;
+        height: 700px;
+
+        background-color: rgba(24,24,24, 0.69);
+
+        border-radius: 5px;
+        margin:5em auto 0 auto;
+        padding-top: 1em;
+        .name{
+            text-align: center;
+            color:#fff;
+            .logo{
+                margin-top: 8em;
+            }
+            .buttons{
+                button{
+                    padding: 1em 2em 1em 2em;
+                    margin:1em;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    border:none;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: black;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

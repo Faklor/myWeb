@@ -1,0 +1,69 @@
+.nav{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 600px;
+    margin:0 auto 0 auto;
+    opacity: 0;
+
+    border-radius: 10px;
+
+    div{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        
+        
+        &:nth-child(1){
+            justify-self: start;
+        }
+        &:nth-child(2){
+            justify-self: end;
+        }
+        
+        svg{
+            align-self: center;
+            padding:0.5em 1em 0.5em 1em;
+            cursor: pointer;
+        }
+        //------------main----------------------
+        .main_svg__main{
+            &:hover{
+                fill:blue;
+            }
+        }
+        //--------------------------------------
+        //-------------profile------------------
+        .profile_svg__profile{
+            &:hover{
+                fill:blue;
+            }
+        }
+        //--------------------------------------
+        //--------------send--------------------
+        .send_svg__send{
+            &:hover{
+                fill:blue;
+            }
+        }
+        //--------------------------------------
+        //----------------telegram--------------
+        .telegram_svg__telegram{
+            &:hover{
+                fill:blue;
+            }
+        }
+        //--------------------------------------
+        //----------------facebook--------------
+        //--------------------------------------
+        //-----------------github---------------
+        //--------------------------------------
+        //----------------linkedin--------------
+        //--------------------------------------
+        
+    }
+
+
+    transition: 1s;
+}
