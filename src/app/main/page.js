@@ -1,5 +1,5 @@
-import './scss/main.scss'
-import Header from  './moduls/header'
+import './main.scss'
+import Header from  '../moduls/header'
 import Logo from '../res/logo.svg'
 
 export default function Main(){
