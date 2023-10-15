@@ -1,6 +1,7 @@
 'use client'
 import './header.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 
 //-----------icons-------------------
 //------------nav------------
@@ -27,15 +28,15 @@ export default function Header(){
     return(
         <nav className='nav'>
             <div>
-                <Main/>
-                <Profile/>
-                <Send/>
+                <Link href='/main'> <Main/> </Link>
+                <Link href='/aboutMe'> <Profile/> </Link>
+                <Link href=''> <Send/> </Link>
             </div>
             <div>
-                <Telegram/>
-                <Facebook/>
-                <Github/>
-                <Linkedin/>
+               <Link href=''> <Telegram/> </Link> 
+               <Link href=''> <Facebook/> </Link>
+               <Link href=''>  <Github/> </Link> 
+               <Link href=''> <Linkedin/> </Link>
             </div>
         </nav>
     )

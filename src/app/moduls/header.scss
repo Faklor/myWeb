@@ -22,10 +22,12 @@
             justify-self: end;
         }
         
-        svg{
+        a{
             align-self: center;
-            padding:0.5em 1em 0.5em 1em;
             cursor: pointer;
+            svg{
+                padding: 0.5em 1em 0.5em 1em;
+            }
         }
         //------------main----------------------
         .main_svg__main{
