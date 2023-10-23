@@ -4,6 +4,7 @@ import Image from 'next/image'
 //-----------images----------------------
 import backUp from './res/backUp.png'
 import backUpFull from './res/backUpFull.png'
+import back from './res/back.jpg'
 //---------------------------------------
 
 
@@ -18,10 +19,11 @@ export default function RootLayout({children}) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        
+        <Image src={back} className='back'/>
         <Image src={backUp}  className='imgUpLeft'/>
         <Image src={backUp}  className='imgUpRight'/>
         <Image src={backUpFull} className='imgUpFull'/> 
+        
         {children}
       </body>
     </html>

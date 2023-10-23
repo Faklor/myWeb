@@ -2,8 +2,8 @@
 
 body {
   margin:0;
-  background: url('./res/back.jpg');
-  background-position: center;
+  //background: url('./res/back.jpg');
+  //background-position: center;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -11,10 +11,19 @@ body {
   overflow-y: scroll;
   
   animation: 2s load forwards;
+
+  display: grid;
+  .back{
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    
+  }
   .imgUpLeft{
     position: fixed;
     left:0;
     z-index: 2;
+    pointer-events: none;
   }
   .imgUpRight{
     position: fixed;
@@ -22,13 +31,15 @@ body {
     transform: rotateY(180deg);
     
     z-index: 2;
+    pointer-events: none;
   }
   .imgUpFull{
     width: 100%;
     height: 100%;
     position: fixed;
-    display: none;
+    //display: none;
     z-index: 2;
+    pointer-events: none;
   }
 }
 
@@ -38,5 +49,14 @@ body {
   }
   100%{
     opacity: 1;
+  }
+}
+
+@media screen and (max-width : 1920px){
+  body{
+    .back{
+      width: 1920px;
+      height: 1080px;
+    }
   }
 }

@@ -3,7 +3,13 @@ import './about.scss'
 import Image from 'next/image'
 
 import Header from  '../moduls/header'
+import IconsFront from './iconsFront'
+import IconsBack from './iconsBack'
+import IconsOther from './iconsOther'
+
 import My from '../res/my.png'
+
+
 
 export default function AboutMe(){
     return(
@@ -26,14 +32,16 @@ export default function AboutMe(){
 
                         <div className='tech'>
                             <p className='name'>Frontend & UX/UI Design</p>
-                            <div className='use'>
-                                <div className='icon'>
-                                    <Image src=''/>
-                                    <p>React</p>
-                                </div>
-                            </div>
+                            <IconsFront/>
                             <p className='name'>Backend</p>
+                            <IconsBack/>
                             <p className='name'>Other</p>
+                            <IconsOther/>
+                        </div>
+
+                        <div className='articl'>
+                            <h1>{'< '}Education{' >'}</h1>
+                            <div />
                         </div>
                     </main>
                 </div>

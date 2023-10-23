@@ -1,7 +1,7 @@
 .aboutMe{
-    width: 100%;
     //height: 100%;
     z-index: 1;
+    align-self: center;
 
     .content{
         width: 1000px;
@@ -59,11 +59,31 @@
                     padding: 1em;
                     margin:0 1em 1em 1em;
                 }
-                .use{
-                    .icon{
+                
+                .icon{
+                    display: grid;
+                    grid-template-columns: repeat(6,1fr);
+                    cursor: default;
+                    margin: 1em;
+
+                    div{
                         display: flex;
+                        transition: 0.5s;
+                        svg{
+                            padding: 0.3em;
+                            width: 3em;
+                            height: 3em;
+                        }
+
+                        &:hover{
+                            scale: 1.2;
+                        }
                     }
+                       
+
+                        
                 }
+                
             }
         }
     }
