@@ -1,0 +1,17 @@
+.contact{
+    z-index: 1;
+    align-self: center;
+    overflow: hidden;
+
+
+    .content{
+        width: 800px;
+        height: 700px;
+
+        background-color: rgba(24,24,24, 0.69);
+
+        border-radius: 5px;
+        margin:5em auto 0 auto;
+        padding-top: 1em;
+    }
+}

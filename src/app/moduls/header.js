@@ -30,7 +30,7 @@ export default function Header(){
             <div>
                 <Link href='/main'> <Main/> </Link>
                 <Link href='/aboutMe'> <Profile/> </Link>
-                <Link href=''> <Send/> </Link>
+                <Link href='/contact'> <Send/> </Link>
             </div>
             <div>
                <Link href=''> <Telegram/> </Link> 
